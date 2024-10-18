@@ -69,7 +69,7 @@ elif grafico == "Gráfico (Barras)":
             plt.tick_params(axis='y', which='major', labelsize=5)
             ax.legend(loc='upper center', borderaxespad=0,ncol=2,fontsize=5,frameon=False)
 
-            st.pyplot(barplot.fig)
+            st.pyplot(plt.gcf())
 
 elif grafico == "Gráfico (Dispersão)":
     for i in disciplinas:
@@ -86,5 +86,5 @@ elif grafico == "Gráfico (Dispersão)":
             ax.set_xticks(df["Alunos_num"])
             ax.legend(loc='upper center', borderaxespad=0,ncol=2,fontsize=5,frameon=False)
 
-            st.pyplot(scatterplot.fig)
+            st.pyplot(plt.gcf())
     
