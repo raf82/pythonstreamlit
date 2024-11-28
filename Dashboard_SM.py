@@ -62,7 +62,7 @@ elif grafico == "Gráfico (Barras)":
             barplot = sns.barplot(x="Alunos_num",y=i,data = df, ax=ax)
             ax.set_ylim(0, 75)
             barplot.axhline(y=means,linewidth = 1, color="red", ls=':', label="Média da turma")
-            barplot.axhline(y=39,linewidth = 1, color="black", ls='-', label="Média global")
+            barplot.axhline(y=36,linewidth = 1, color="black", ls='-', label="Média global")
             plt.xlabel('Alunos', fontsize=10);
             plt.ylabel(i, fontsize=10);
             plt.tick_params(axis='x', which='major', labelsize=3)
@@ -78,7 +78,7 @@ elif grafico == "Gráfico (Dispersão)":
             scatterplot = sns.scatterplot(x="Alunos_num",y=i,data = df,s=15, ax=ax)
             ax.set_ylim(0, 75)
             scatterplot.axhline(y=means,linewidth = 1, color="red", ls=':',label="Média da turma")
-            scatterplot.axhline(y=39,linewidth = 1, color="black", ls='-',label="Média global")
+            scatterplot.axhline(y=36,linewidth = 1, color="black", ls='-',label="Média global")
             plt.xlabel('Alunos', fontsize=10);
             plt.ylabel(i, fontsize=10);
             plt.tick_params(axis='x', which='major', labelsize=3)
