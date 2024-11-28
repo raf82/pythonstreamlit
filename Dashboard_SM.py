@@ -47,10 +47,10 @@ if grafico == "Tabela":
     for i in disciplinas:
         if disciplina == i:
             df1 = df[['Alunos_nome',disciplina]]
-            df2 = pd.DataFrame(columns = ["Alunos 1", disciplina+"1","Alunos 2", disciplina+"2","Alunos 3", disciplina+"3","Alunos 4", disciplina+"4","Alunos 5", disciplina+"5"])
-            for i in np.arange(0,10):
-                arr1 = np.array(df1.iloc[i::10])
-                arr2 = np.reshape(arr1,(10))
+            df2 = pd.DataFrame(columns = ["Alunos 1", disciplina+"1","Alunos 2", disciplina+"2"])
+            for i in np.arange(0,20):
+                arr1 = np.array(df1.iloc[i::20])
+                arr2 = np.reshape(arr1,(20))
                 df2.loc[len(df2)]=arr2
                 
             st.table(df2)
