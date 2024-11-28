@@ -48,9 +48,9 @@ if grafico == "Tabela":
         if disciplina == i:
             df1 = df[['Alunos_nome',disciplina]]
             df2 = pd.DataFrame(columns = ["Alunos 1", disciplina+"1","Alunos 2", disciplina+"2"])
-            for i in np.arange(0,20):
-                arr1 = np.array(df1.iloc[i::20])
-                arr2 = np.reshape(arr1,(20))
+            for i in np.arange(0,19):
+                arr1 = np.array(df1.iloc[i::19])
+                arr2 = np.reshape(arr1,(19))
                 df2.loc[len(df2)]=arr2
                 
             st.table(df2)
