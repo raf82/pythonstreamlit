@@ -32,7 +32,7 @@ Notas totais da 1ª e 2ª etapas dos alunos do 2º ano do ensino médio
 
 """)
 
-df = pd.read_excel('alunos_01.xlsx', sheet_name = "notas2")
+df = pd.read_excel('alunos_02.xlsx', sheet_name = "notas2")
 
 st.sidebar.header ('Opções')
 
